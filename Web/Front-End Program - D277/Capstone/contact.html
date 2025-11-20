@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!--==================== CSS ====================-->
+            <link rel="stylesheet" href="assets/css/styles.css">
+
+            <!--==================== JS ====================-->
+            <script src="assets/js/formvalidate.js" defer></script>
+            
+            <!--====================
+            All "home" class or id or similar page prefix below should not exist and should be immediately be replaced with the relevant page
+            e.g. <id="home-section"> should be changed to <id="austin-section" etc.>
+            ====================-->
+            
+            <!--==================== TITLE ====================-->
+            <title>Contact</title>
+        </head>
+        <body>
+            <!--==================== HEADER ====================-->
+            <header class="header">
+                <nav class="nav container">
+                    <!--==================== HEADER INFO ====================-->
+                    <h1 class="header-info" id="header-info-id">Contact</h1>
+                    <!--==================== NAV MENU ====================-->
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="austin.html" class="nav-link">Austin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="dallas.html" class="nav-link">Dallas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="houston.html" class="nav-link">Houston</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link active">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            
+            
+            <!--==================== MAIN ====================-->
+            <main>
+                <!--==================== SECTION ====================-->
+                <section class="section container" id="contact-section">
+                    <!--==================== FORM ====================-->
+                    <form id="userInfoForm">
+                        <label for="firstName">First name:</label>
+                        <input type="text" id="firstName" name="firstName" maxlength="50" pattern="[A-Za-z]{1,}" required placeholder="Enter your first name">
+                        <label for="lastName">Last name:</label>
+                        <input type="text" id="lastName" name="lastName" maxlength="50" pattern="[A-Za-z]{1,}" required placeholder="Enter your last name">
+                        <label for="emailAddress">Email address:</label>
+                        <input type="text" id="emailAddress" name="emailAddress" maxlength="50" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="Enter your email address">
+                        <label for="confirmationEmail">Confirm Email:</label>
+                        <input type="text" id="confirmationEmail" name="confirmationEmail" maxlength="50" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="Confirm your email address">
+                        <label for="questionBox">Questions:</label>
+                        <input type="text" id="questionBox" name="questionBox" maxlength="50" required placeholder="Ask your question here">
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+            </main>
+            <!--==================== FOOTER ====================-->
+            <!-- HYPERLINKS OPENS IN A NEW TAB -->
+            <footer class="footer container" id="contact-footer">
+                <p id="contact-footer-p">
+                    Thank you for visiting my page!
+                </p>
+            </footer>
+        </body>
+    </html>

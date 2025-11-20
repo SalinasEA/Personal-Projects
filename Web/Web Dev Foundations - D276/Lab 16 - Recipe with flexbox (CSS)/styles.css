@@ -1,0 +1,94 @@
+/*
+Complete an external stylesheet so the provided HTML (oatmeal_cookies.html) looks like the following web page.
+
+Webpage design for flexbox styling lab
+
+Add the following style rules to the stylesheet:
+
+<header> tag: set display to be flex and justify-content to be space-between
+content class: set display to be flex and flex-wrap to be wrap
+main-content class: set display to be flex, flex-wrap to be wrap, flex-grow to be 1, and flex-basis to be 70%
+title class: set display to be flex and align-items to be baseline
+summary class: set display to be flex, justify-content to be space-evenly, flex-grow to be 1, and flex-basis to be 100%
+<div> tag child of <div> tag child of summary class: set display to be flex and justify-content to be space-between
+ingredients and directions classes: set flex-grow to be 1 and flex-basis to be 45%
+related-content class: set flex-grow to be 1 and flex-basis to be 20%
+*/
+body {
+   margin: 0;
+   font-family: Helvetica, sans-serif;
+}
+
+header {
+   border-bottom: 2px solid #93B5C6;
+   background-color: #DDEDAA;
+   padding: 8px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.logo {
+   color: #BD4F6C;
+   font-size: 18px;
+}
+
+.content {
+   margin-left: 30px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.main-content {
+   display: flex;
+   flex-wrap: wrap;
+   flex-grow: 1;
+   flex-basis: 70%;
+}
+
+.title {
+   border-bottom: 1px dashed #93B5C6;
+   display: flex;
+   align-items: baseline;
+}
+
+.title h1 {
+   color: #BD4F6C;
+}
+
+.title p {
+   color: #93B5C6;
+   margin-left: 30px;
+}
+
+.summary {
+   margin-top: 30px;
+   display: flex;
+   justify-content: space-evenly;
+   flex-grow: 1;
+   flex-basis: 100%;
+}
+
+.summary > div {
+   background-color: #DDEDAA;
+   border: 2px solid #93B5C6;
+   border-radius: 5px;
+   color: #BD4F6C;
+   padding: 5px;
+   width: 210px;
+}
+
+.summary div div {
+   display: flex;
+   justify-content: space-between;
+}
+
+.ingredients, .directions {
+   flex-grow: 1;
+   flex-basis: 45%;
+}
+
+.related-content {
+   margin-left: 100px;
+   flex-grow: 1;
+   flex-basis: 20%;
+}

@@ -1,0 +1,74 @@
+<!--
+Modify the given HTML file to look like the web page below.
+
+Sleep recommendations web page
+
+Add CSS rules to the embedded stylesheet so each element uses the following styles:
+
+<body> uses Arial, Helvetica, sans-serif font family, 18px font size, and #EDF4FB background color
+<h1> uses RGB (26, 69, 107) font color
+<li> uses #296CA8 font color
+<span> with "age" class uses an italic font style
+<span> with "recommended" class has a yellow background color and underlined text
+-->
+<!DOCTYPE html>
+<html lang="en">
+<style>
+   body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      background-color: #EDF4FB;
+   }
+
+   h1 {
+      color: rgb(26, 69, 107);
+   }
+
+   li {
+      color: #296CA8;
+   }
+
+   span.age {
+      font-style: italic;
+   }
+
+   span.recommended {
+      background-color: yellow;
+      text-decoration: underline;
+   }
+</style>
+<head>
+   <title>Sleep Duration Recommendations</title>
+   
+   <style>
+      /* Your solution goes here */
+   
+   </style>
+</head>
+<body>
+   <h1>Sleep Duration Recommendations</h1>
+   <ul>
+      <li>School-aged children <span class="age">(6-13 years)</span> &mdash;
+         <span class="recommended">9-11 hours</span>
+      </li>
+      <li>Teenagers <span class="age">(14-17 years)</span> &mdash;
+         <span class="recommended">8-10 hours</span>
+      </li>
+      <li>Young adults <span class="age">(18-25 years)</span> &mdash;
+         <span class="recommended">7-9 hours</span>
+      </li>
+      <li>Adults <span class="age">(26-64 years)</span> &mdash;
+         <span class="recommended">7-9 hours</span>
+      </li>
+      <li>Older adults <span class="age">(65+ years)</span> &mdash;
+         <span class="recommended">7-8 hours</span>
+      </li>
+   </ul>
+   <p>
+      Source: <a
+         href="https://www.sleepfoundation.org/press-release/national-sleep-foundation-recommends-new-sleep-times/page/0/1">
+         National Sleep Foundation’s Sleep Duration Recommendations</a>
+   </p>
+
+</body>
+</html>

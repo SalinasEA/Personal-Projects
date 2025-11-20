@@ -1,0 +1,30 @@
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+ol button {
+   width: 28px;
+   height: 28px;
+   line-height: 10px;
+   margin-right:3px;
+}
+
+li {
+   margin-bottom: 5px;
+}
+
+.task-text {
+   display: inline-block;
+   width: 200px;
+}
+
+.done-btn {
+   background-color: white;
+   border: 0;
+   opacity: 0.5;
+}
+
+.done-btn:hover {
+   cursor: pointer;
+   opacity: 1;
+}

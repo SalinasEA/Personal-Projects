@@ -1,0 +1,31 @@
+<div id="mapDiv">
+  <object id="svgObject" type="image/svg+xml" data="map-image.svg">
+  </object>
+
+  <!--
+  Requirement C:
+  ID,
+  Country name,
+  Country capital city,
+  Country region value,
+  Income level value,
+  Lending type ID,
+  -->
+  <table id="countryInfoTable">
+    <tr id="countryInfoHeaderRow">
+      <th id="countryInfoHeader">
+        {{ countryLookupData?.name || "Select a country" }}
+      </th>
+    </tr>
+    <tr id="countryInfoDataRow">
+      <td id="countryInfoData" *ngIf="countryLookupData">
+        <p>ID: {{ countryLookupData.id }}</p>
+        <p>Country name: {{ countryLookupData.name }}</p>
+        <p>Capital: {{ countryLookupData.capitalCity }}</p>
+        <p>Country region: {{ countryLookupData.region.value }}</p>
+        <p>Income level: {{ countryLookupData.incomeLevel.value }}</p>
+        <p>Lending type: {{ countryLookupData.lendingType.value }}</p>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,58 @@
+<!--
+Download the ZIP file below containing an HTML and CSS file. Add a web form to index.html as shown below that allows the user to enter personal information for joining a social network. The webpage uses CSS to align the form widgets vertically.
+
+Example social network web page screenshot
+
+The form should:
+
+Use the POST method and the "multipart/form-data" enctype
+Submit to https://wp.zybooks.com/form-viewer.php
+Use a <label> for each form field and the label text shown in the image above
+Use a <div> to surround each label and form widget and a <div> around the submit button
+Use a text <input> with name and id "fullName" to get the user's name
+Use a text <input> with name and id "email" to get the user's email address
+Use a <textarea> with 3 rows, 50 columns, and name and id "about" to get a short description about the user
+Use a text <input> with type "file" and name and id "picture" to get the user's image
+Use a submit <input> button
+Use the required attribute for name and email fields
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Join a social network</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+        <h1>Join a social network</h1>
+
+        <form method="post" action="https://wp.zybooks.com/form-viewer.php" enctype="multipart/form-data" >
+            <div>
+                <label for="fullName">Full name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+        
+            <div>
+                <label for="email">Email address:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="about">About you:</label>
+                <textarea id="about" name="about" rows="3" cols="50"></textarea>
+            </div>
+
+            <div>
+                <label for="picture">Photo:</label>
+                <input type="file" id="picture" name="picture">
+            </div>
+
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </body>
+
+</html>

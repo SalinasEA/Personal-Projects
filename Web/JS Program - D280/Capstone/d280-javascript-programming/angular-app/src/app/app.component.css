@@ -1,0 +1,22 @@
+#mapDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#svgObject {
+    width: 70vw;
+}
+
+#countryInfoTable {
+    width: 20vw;
+    border-style: solid;
+    border-color: crimson;
+    border-spacing: 2vw;
+}
+
+#countryInfoHeader {
+    border-bottom: solid;
+}

@@ -1,0 +1,66 @@
+<!--
+Edit the given web form that allows the user to enter a birthday message and select various message options. The web page uses CSS to align the form widgets vertically. The web page should look like the following:
+
+Example happy birthday web page screenshot
+
+The form should:
+
+Use the regular expression [a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)* for the email address <input> to verify the user enters what looks to be an email address
+
+Use a date <input> for specifying a date to send the message
+
+Use a color <input> for selecting the message color
+
+Use a number <input> with a default value of 0, minimum of 0, and maximum of 10 for number of times the message blinks
+
+Use a range <input> with a default value of 20, minimum of 0, and maximum of 50 for the music volume
+
+Use a submit <button> that reads "Send Birthday Message"
+
+Specify an id attribute for all form elements that matches the given for attribute of each associated <label>
+
+Specify a name attribute for all form elements that matches each element's id attribute
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Happy Birthday Message Creator</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <h1>Happy Birthday Message Creator</h1>
+   <form method="POST" action="https://wp.zybooks.com/form-viewer.php">
+      <div>
+         <label for="birthdayMessage">Message?</label>
+         <input type="text" id="birthdayMessage" name="birthdayMessage" value="Happy birthday!">
+      </div>
+      <div>
+         <label for="emailAddr">Email address?</label>
+         
+         <!-- TODO: Add regular expression to pattern -->
+         <input type="email" id="emailAddr" name="emailAddr" placeholder="name@domain.com" pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*">
+      </div>
+      <div>
+         <label for="dateToSend">Date to send?</label>
+         <input type="date" id="dateToSend" name="dateToSend">
+      </div>
+      <div>
+         <label for="messageColor">Message color?</label>
+         <input type="color" id="messageColor" name="messageColor">
+      </div>
+      <div>
+         <label for="numBlinks">Number of blinks?</label>
+         <input type="number" id="numBlinks" name="numBlinks" value="0" min="0" max="10">
+      </div>
+      <div>
+         <label for="musicVolume">Music volume?</label>
+         <input type="range" id="musicVolume" name="musicVolume" value="20" min="0" max="50">
+      </div>
+      <div>
+         <button type="submit">Send Birthday Message</button>
+      </div>
+   </form>
+   
+</body>
+
+</html>

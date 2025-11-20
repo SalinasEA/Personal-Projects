@@ -1,0 +1,66 @@
+<!--
+Modify the given HTML file to look like the web page below.
+
+Web page shows a 'Tic-Tac-Toe' heading above a 3x3 grid of light blue squares with X and O appearing in some of the squares
+
+Add the following CSS to the #board selector in the embedded stylesheet:
+
+A display property that makes the board's <div> element a grid layout container.
+A grid-template-columns property to create 3 columns that are all 100px wide.
+A grid-template-rows property to create 3 rows that are all 100px tall.
+A grid-gap property to create a 10px gap between each of the 9 grid cells.
+A justify-content property that centers the grid horizontally.
+-->
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Tic-Tac-Toe</title>   
+      <style>
+      
+      body {
+         font-family: Roboto, Helvetica, sans-serif;
+         text-align: center;
+      }
+   
+      .x {
+         color: red;
+      }
+      
+      .o {
+         color: blue;
+       }
+       
+      #board {
+         font: 85px arial, sans-serif;
+         margin: 3px;
+         display: grid;
+         grid-template-columns: 100px 100px 100px;
+         grid-template-rows: 100px 100px 100px;
+         grid-gap: 10px;
+         justify-content: center;
+   
+      }
+   
+      #board > div {
+         border: 1px solid LightSkyBlue;
+         text-align: center;
+      }
+   
+      </style>
+   </head>
+   <body>
+      <h1>Tic-Tac-Toe</h1>
+        
+      <div id="board">
+         <div class="x">X</div>
+         <div class="o">O</div>
+         <div></div>
+         <div></div>
+         <div class="x">X</div>
+         <div></div>
+         <div class="o">O</div>
+         <div></div>
+         <div class="x">X</div>
+      </div>
+   </body>
+</html>

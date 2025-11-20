@@ -1,0 +1,226 @@
+/*==================== BASE ====================*/
+* {
+    box-sizing: border-box;
+}
+
+/* ELEMENT SELECTOR AND FONT FAMILY DECLARATION */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 2rem;
+}
+
+
+/* ID */
+#header-info-id::first-letter {
+    color: blue;
+}
+
+#contact-footer {
+    min-height: 50px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 2rem;
+    border: 5px double grey;
+    min-height: 200px;
+}
+
+a {
+    color: hsl(0, 0%, 0%)
+}
+
+h1 {
+    font-size: 16pt;
+}
+
+p {
+    margin: 0px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table {
+    margin-bottom: 2rem;
+}
+
+th, td {
+    padding: 15px;
+}
+
+#contact-section {
+    width: 100%;
+}
+
+form, form label, form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+input[type="text"] {
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    width: auto;
+    margin-top: 2rem;
+    background-color: hsl(158, 95%, 34%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+/* RELATIVE POSITION AND FLOAT */
+.section {
+    position: relative;
+    display: grid;
+    place-items: center;
+    top: 48px;
+    width: 55%;
+    float: left;
+    overflow: auto;
+    border: 5px double grey;
+}
+
+.aside {
+    position: relative;
+    top: 48px;
+    width: 40%;
+    float: right;
+    min-height: 716px;
+    border: 5px double grey;
+    overflow: auto;
+}
+
+/* CLASS USED TWICE */
+.aside img {
+    max-width: 60%;
+    height: auto;
+    clear: both;
+}
+
+.article {
+    position: relative;
+    width: 99%;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    min-height: 700px;
+    border: 5px double grey;
+}
+
+/* ABSOLUTE POSITION */
+.article p {
+    position: absolute;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: hsl(0, 100%, 50%);
+    height: 3rem;
+    z-index: 1;
+}
+
+/*==================== NAV ====================*/
+.nav {
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    padding-right: 2rem;
+}
+
+.nav-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    display: flex;
+    column-gap: 2rem;
+}
+
+/* :HOVER PSEUDO CLASS */
+.nav-list a:hover {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+}
+
+nav ul {
+    list-style: none;
+}
+
+/*==================== VIEWPORTS ====================*/
+@media (max-width: 660px) {
+    .nav-list, .header-info {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .nav-list, .header-info {
+        font-size: 0.5rem;
+        column-gap: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav-list, .header-info {
+        font-size: 0.5rem;
+        column-gap: 0.2rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .nav-list, .header-info {
+        font-size: 0.5rem;
+        column-gap: 0.1rem;
+    }
+}
