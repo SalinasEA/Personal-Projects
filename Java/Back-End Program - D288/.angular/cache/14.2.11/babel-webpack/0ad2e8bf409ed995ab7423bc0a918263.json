@@ -1,1 +1,0 @@
-{"ast":null,"code":"export var StatusType = /*#__PURE__*/(() => {\n  (function (StatusType) {\n    StatusType[\"pending\"] = \"pending\";\n    StatusType[\"ordered\"] = \"ordered\";\n    StatusType[\"cancelled\"] = \"cancelled\";\n  })(StatusType || (StatusType = {}));\n\n  return StatusType;\n})();","map":null,"metadata":{},"sourceType":"module"}

@@ -1,1 +1,0 @@
-{"ast":null,"code":"export class Division {\n  constructor(id, division_name, country_id, _links) {\n    this.id = id;\n    this.division_name = division_name;\n    this.country_id = country_id;\n    this._links = _links;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
