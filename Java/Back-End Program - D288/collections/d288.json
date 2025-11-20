@@ -1,0 +1,25 @@
+{
+  "info": {
+    "_postman_id": "821b9dc9-f651-45c1-b5f7-443ec70e6b0c",
+    "name": "d288",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET http://localhost:8080/",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://example.com",
+          "protocol": "http",
+          "host": [
+            "example",
+            "com"
+          ]
+        },
+        "header": [],
+        "body": {}
+      }
+    }
+  ]
+}
