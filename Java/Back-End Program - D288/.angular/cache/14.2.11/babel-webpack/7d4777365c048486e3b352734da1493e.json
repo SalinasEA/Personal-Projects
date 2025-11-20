@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Country {\n  constructor(id, country_name, _links) {\n    this.id = id;\n    this.country_name = country_name;\n    this._links = _links;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
