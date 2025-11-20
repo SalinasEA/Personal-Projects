@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TimeZoneTest",
+            "request": "launch",
+            "mainClass": "edu.wgu.d387_sample_code.translation.TimeZoneTest",
+            "projectName": "D387_sample_code"
+        },
+        {
+            "type": "java",
+            "name": "QuickCheck",
+            "request": "launch",
+            "mainClass": "edu.wgu.d387_sample_code.translation.QuickCheck",
+            "projectName": "D387_sample_code"
+        },
+        {
+            "type": "java",
+            "name": "DisplayWelcomeMessage",
+            "request": "launch",
+            "mainClass": "edu.wgu.d387_sample_code.translation.DisplayWelcomeMessage",
+            "projectName": "D387_sample_code"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-D387SampleCodeApplication<D387_sample_code>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "edu.wgu.d387_sample_code.D387SampleCodeApplication",
+            "projectName": "D387_sample_code",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=61776 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=D387_sample_code"
+        }
+    ]
+}
