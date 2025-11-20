@@ -48,6 +48,7 @@ Software Literacy
 ### Western Governors University
 
 B.S. in Software Engineering
+(in progress)
 
 Millcreek, Utah
 Remote
